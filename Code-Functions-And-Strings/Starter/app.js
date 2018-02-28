@@ -1,20 +1,10 @@
 var myApp = angular.module('myApp', []);
 
-myApp.controller('mainController', function($scope) {
+myApp.controller('mainController', function($scope, $log) {
     
     $scope.name = 'Jane Doe';
     $scope.occupation = 'Coder';
     
-    $scope.getname = function() {
-        return 'John Doe';
-    }
-    
-    console.log($scope);
+    console.log($log);
     
 });
-
-var searchPeople = function(fName, lName) {
-	return "James Deam"
-}
-
-console.log(angular.injector().annotate(searchPeople))
